@@ -7,7 +7,9 @@ print('''
 escolha = int(input('Qual projeto deseja abrir: '))
 print('=-=' * 20)
 
-if (escolha == 1):
+if ( escolha == 1 ):
     import jogodavelha
+if ( escolha == 2 ):
+    import jogodaforca
 
 
