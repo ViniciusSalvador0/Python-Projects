@@ -1,15 +1,11 @@
 import random
 
 def imprimir_menu():
-
     print('=-=' * 10)
-    print(' BEM VINDO AO JOGO DA FORCA!')
+    print('   ◆ JOGO DA ADIVINHAÇÃO ◆')
     print('=-=' * 10)
-    print('''
-    [1] Fácil
-    [2] Médio
-    [3] Difícil
-    ''')
+    print('DIFICULDADE')
+    print('','[1] Fácil','[2] Médio','[3] Difícil','', sep='\n')
 
 def escolher_dificuldade(msg):
 
@@ -58,14 +54,13 @@ def imprimir_final():
 def jogar():
 
     # Variaveis
-
     pontuacao_atual = 1000
     pontos_perdidos = 0
 
-    status = False
-
     numero_limite = 100
     numero_secreto = random.randrange(0, numero_limite)
+
+    status = False
 
     imprimir_menu()
 
@@ -87,5 +82,3 @@ def jogar():
     pontuacao_atual = imprimir_pontuacao(pontuacao_atual, pontos_perdidos)
 
     imprimir_final()
-
-jogar()

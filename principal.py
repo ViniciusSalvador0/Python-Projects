@@ -2,7 +2,7 @@ import adivinhacao
 from jogodaforca import forca
 
 print('=-=' * 10)
-print('PROJETOS:')
+print('        ◆ PROJETOS ◆')
 print('=-=' * 10)
 print('''
 [1] Jogo da Adivinhação
