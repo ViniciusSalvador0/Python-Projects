@@ -1,15 +1,19 @@
-print('=-=' * 20)
-print(' ' * 25 + 'PROJETOS:')
-print('=-=' * 20)
+import adivinhacao
+from jogodaforca import forca
+
+print('=-=' * 10)
+print('PROJETOS:')
+print('=-=' * 10)
 print('''
-[1] Adivinhação
+[1] Jogo da Adivinhação
+[2] Jogo da Forca
 ''')
 escolha = int(input('Qual projeto deseja abrir: '))
-print('=-=' * 20)
 
-if ( escolha == 1 ):
-    import jogodavelha
+if ( escolha == 1):
+    adivinhacao.jogar()
+
 if ( escolha == 2 ):
-    import jogodaforca
+    forca.jogar()
 
 
